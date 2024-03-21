@@ -1,0 +1,12 @@
+figure {
+  margin-bottom: var(--spacing-unit-x2);
+}
+figure:last-child {
+  margin-bottom: 0;
+}
+div {
+  padding: var(--spacing-unit-x2) var(--spacing-unit-x2);
+  border: 2px dashed rgba(151, 71, 255, 0.5);
+  margin-right: 44px;
+  margin-bottom: 44px;
+}
