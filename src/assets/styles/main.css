@@ -1,12 +1,11 @@
 @import './base.css';
 @import './typography.css';
+@import './global.css';
 
 #app {
   max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
-  border: 1px solid red;
-  font-weight: normal;
+  width: 100%;
 }
 
 a,
@@ -28,11 +27,11 @@ a,
     place-items: center;
   }
 
-  #app {
+  /* #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
-  }
+  } */
 
   /* storybook docs styles */
   div.sbdocs.sbdocs-content {
