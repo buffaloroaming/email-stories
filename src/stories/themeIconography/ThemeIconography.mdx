@@ -1,0 +1,22 @@
+import { Meta, Unstyled, Story } from '@storybook/blocks'
+
+import * as IconographyStories from './ThemeIconography.stories'
+
+<Meta of={IconographyStories} />
+
+<Unstyled>
+  <h1>iconography</h1>
+  <section>
+    <h2>Socials</h2>
+    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <Story of={IconographyStories.HelloEmail} />
+      <Story of={IconographyStories.Youtube} />
+      <Story of={IconographyStories.HelloEmail} />
+      <Story of={IconographyStories.Facebook} />
+      <Story of={IconographyStories.Twitter} />
+      <Story of={IconographyStories.LinkedInIcons} />
+      <Story of={IconographyStories.Instagram} />
+      <Story of={IconographyStories.HolaEmail} />
+    </div>
+  </section>
+</Unstyled>
