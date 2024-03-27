@@ -12,10 +12,10 @@ defineProps({
 
 <template>
   <div class="greetings">
-    <Header msg="Yo this is so confusing to me, but hell if I get it.">
+    <Header msg="">
       <h1>This is a <br /> Storybook exercise.</h1>
     </Header>
-    <p>description here.</p>
+    <p><mark>This is a case study exercise using Oportun's figma design system and integrating it with Storybook. Storybook is a frontend workshop for building UI components and pages in&nbsp;isolation.</mark></p>
     <h3>
       <a href="" rel="noopener">Check it out</a>
     </h3>
@@ -44,7 +44,19 @@ h3 a:hover {
   font-weight: 700;
   padding:.6em .8em;
 }
-
+p {
+  font-weight: 700;
+  line-height: 120%;
+}
+p mark{
+  background: rgba(223, 228, 128, 0.7);
+}
+.greetings {
+  margin:0 auto;
+  max-width:642px;
+  padding:0 1em;
+  width:90%;
+}
 .greetings h1,
 .greetings h3,
 .greetings p {
@@ -52,10 +64,8 @@ h3 a:hover {
 }
 
 @media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3,
-  .greetings p {
-    text-align: center;
+  .greetings {
+    padding:0 7em;
   }
 }
 </style>

@@ -1,11 +1,10 @@
 <template>
 <section>
-    <div  backgroundColor="{{backgroundColor}}">
+    <div :style="{backgroundColor:backgroundColor}">
       <figure v-for="(img, i) in images" :key="i">
         <img :src="getImageURL(img)" :style="{width:size,margin:'.5em'}" />
         <figcaption>{{caption}}</figcaption>
       </figure>
-      
     </div>
   </section>
 </template>

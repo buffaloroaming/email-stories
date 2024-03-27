@@ -12,8 +12,8 @@ import IntroPage from './components/IntroPage.vue'
 
 <style scoped>
 #main {
-  background: url(./assets/bg-color-pallette.png) no-repeat center top;
-  background-size: contain;
+  background: url(./assets/bg-color-pallette-v3.png) no-repeat center top;
+  background-size: cover;
   height: 100vh;
   display: flex;
   flex-flow: column;
