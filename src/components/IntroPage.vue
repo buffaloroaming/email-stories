@@ -46,13 +46,15 @@ h3 a:hover {
 }
 
 .greetings h1,
-.greetings h3 {
+.greetings h3,
+.greetings p {
   text-align: center;
 }
 
 @media (min-width: 1024px) {
   .greetings h1,
-  .greetings h3 {
+  .greetings h3,
+  .greetings p {
     text-align: center;
   }
 }
