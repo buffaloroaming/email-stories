@@ -22,7 +22,7 @@ export const logoPathward = {
 export const logoDarkMode = {
     args: {
         images: ['logo-white-green-dot.png', 'logo-white-white-dot.png'],
-        size: '12em',
-        backgroundColor: '#ccc' //bg color needs to be grey here.
+        size: '6em',
+        backgroundColor: '#666'
     }
 }
