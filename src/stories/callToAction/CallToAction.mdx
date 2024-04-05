@@ -1,0 +1,30 @@
+import { Canvas, Meta, Unstyled, Story } from '@storybook/blocks'
+import '@/assets/styles/main.css'
+
+import * as CallToActionStories from './CallToAction.stories'
+
+<Meta of={CallToActionStories} />
+
+<Unstyled>
+    <h1>Call to Actions</h1>
+
+<section style={{ maxWidth: '1280px' }}>
+	<h2>Buttons</h2>
+	<div class="margin-bottom-4">
+	<h3>Primary</h3>
+	  <Story of={CallToActionStories.Primary} />
+	</div>
+	<div class="margin-bottom-4">
+	<h3>Secondary</h3>
+		<Story of={CallToActionStories.Secondary} />
+	</div>
+	<div class="margin-bottom-4">
+		<h3>Tertiary</h3>
+		<Story of={CallToActionStories.Tertiary} />
+	</div>
+	<div class="margin-bottom-4">
+		<h3>Log in</h3>
+		<Story of={CallToActionStories.Login} />
+	</div>
+</section>
+</Unstyled>

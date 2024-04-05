@@ -14,6 +14,9 @@ a,
   color: var(--text-black);
   transition: 0.4s;
 }
+.margin-bottom-4 {
+  margin-bottom: var(--spacing-unit-x4);
+}
 
 @media (hover: hover) {
   a:hover {
