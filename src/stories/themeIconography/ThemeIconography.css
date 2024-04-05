@@ -4,9 +4,32 @@ figure {
 figure:last-child {
   margin-bottom: 0;
 }
-div {
+.icon-container {
   padding: var(--spacing-unit-x2) var(--spacing-unit-x2);
   border: 2px dashed rgba(151, 71, 255, 0.5);
-  margin-right: 44px;
-  margin-bottom: 44px;
+}
+.remove-child-outline .icon-container {
+  border: none;
+}
+.dark-icon-container {
+  background-color: var(--primary-black);
+}
+.flex-row {
+  display: flex;
+  flexwrap: wrap;
+  gap: 10px;
+}
+img {
+  display: block;
+  height: auto;
+}
+.flex-row .available-on-icons .icon-container {
+  margin: 0;
+  border: 0;
+}
+.center {
+  text-align: center;
+}
+.margin-bottom-4 {
+  margin-bottom: var(--spacing-unit-x4);
 }
