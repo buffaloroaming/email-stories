@@ -4,7 +4,6 @@ import Button from './CallToAction.vue'
 export default {
   title: 'Components/Button',
   component: Button,
-  tags: ['autodocs'],
   argTypes: {
     onClick: {},
     buttonType: {
