@@ -1,0 +1,105 @@
+.text-description {
+  display: block;
+  font-size: 1em;
+  line-height: 1.25;
+}
+.typography-story-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.typography-container {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+}
+/* .typography-examples {
+  border: 1px solid red;
+} */
+.typography-examples:nth-child(odd) {
+  flex-basis: calc(40% - 60px);
+}
+.typography-examples:nth-child(even) {
+  flex-basis: calc(50% - 60px);
+}
+.border {
+  border: 1px solid #000;
+}
+.tt-commons {
+  font-family: 'TT Commons', Arial, sans-serif;
+}
+.arial {
+  font-family: Arial, sans-serif;
+}
+.weight-900 {
+  font-weight: 900;
+}
+.weight-600 {
+  font-weight: 600;
+}
+.weight-500 {
+  font-weight: 500;
+}
+.weight-400 {
+  font-weight: 400;
+}
+.size-16 {
+  font-size: 16px;
+}
+.size-20 {
+  font-size: 20px;
+}
+.size-22 {
+  font-size: 22px;
+}
+.size-32 {
+  font-size: 32px;
+}
+.size-40 {
+  font-size: 40px;
+}
+.size-45 {
+  font-size: 45px;
+}
+.size-80 {
+  font-size: 80px;
+}
+.size-92 {
+  font-size: 92px;
+}
+.flex-row {
+  display: flex;
+}
+.block {
+  display: block;
+}
+.width-35-percent {
+  flex-basis: 35%;
+}
+.width-65-percent {
+  flex-basis: 65%;
+}
+.gap-120 {
+  gap: 120px;
+}
+.width-100-percent {
+  width: 100%;
+}
+.margin-bottom-45px {
+  margin-bottom: 45px;
+}
+.margin-bottom-65px {
+  margin-bottom: 65px;
+}
+.margin-top-45px {
+  margin-top: 45px;
+}
+p {
+  margin-bottom: 35px;
+}
+span {
+  line-height: 1.2;
+}
+.line-height-15 {
+  line-height: 1.5;
+}
