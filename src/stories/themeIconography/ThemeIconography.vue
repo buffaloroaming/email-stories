@@ -1,11 +1,9 @@
 <template>
-  <section>
-    <div>
-      <figure v-for="(img, i) in images" :key="i">
-        <img :src="getImageURL(img)" />
-      </figure>
-    </div>
-  </section>
+  <div className="icon-container">
+    <figure v-for="(img, i) in images" :key="i">
+      <img :src="getImageURL(img)" :style="{ width: `${width}px` }" />
+    </figure>
+  </div>
 </template>
 
 <script setup>
@@ -13,7 +11,8 @@ function getImageURL(name) {
   return new URL(`../../assets/images/iconography/${name}`, import.meta.url).href
 }
 defineProps({
-  images: []
+  images: [],
+  width: Number
 })
 </script>
 
