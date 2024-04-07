@@ -1,7 +1,7 @@
 import ThemeColors from './ThemeColors.vue'
 
 export default {
-  title: 'Theme/Colors',
+  title: 'Brand/Colors',
   component: ThemeColors,
   parameters: {
     // layout: 'centered',

@@ -1,7 +1,7 @@
 import ThemeLayoutGrids from './ThemeLayoutGrids.vue'
 
 export default {
-  title: 'Theme/LayoutGrids',
+  title: 'Format/LayoutGrids',
   component: ThemeLayoutGrids,
   tags: ['autodocs'],
   argTypes: {
