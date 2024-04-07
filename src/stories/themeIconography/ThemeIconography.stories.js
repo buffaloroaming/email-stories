@@ -1,7 +1,7 @@
 import ThemeIconography from './ThemeIconography.vue'
 
 export default {
-  title: 'Theme/Iconography',
+  title: 'Components/Iconography',
   component: ThemeIconography
 }
 

@@ -1,7 +1,7 @@
 import ThemeSpacing from './ThemeSpacing.vue'
 
 export default {
-  title: 'Theme/Spacing',
+  title: 'Format/Spacing',
   component: ThemeSpacing,
   // tags: ['autodocs'],
   argTypes: {
