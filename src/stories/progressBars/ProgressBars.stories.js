@@ -6,9 +6,10 @@ export default {
   tags: ['autodocs']
 }
 
-export const MileStoneOne = {
+export const MilestoneOne = {
   args: {
     dir: 'progressBars',
+    title: 'Milestone One',
     fileName: 'milestoneOne.png',
     images: [
       {
@@ -22,9 +23,10 @@ export const MileStoneOne = {
     ]
   }
 }
-export const MileStoneTwo = {
+export const MilestoneTwo = {
   args: {
     dir: 'progressBars',
+    title: 'Milestone Two',
     fileName: 'milestoneTwo.png',
     images: [
       {
@@ -38,9 +40,10 @@ export const MileStoneTwo = {
     ]
   }
 }
-export const MileStoneThree = {
+export const MilestoneThree = {
   args: {
     dir: 'progressBars',
+    title: 'Milestone Three',
     fileName: 'milestoneThree.png',
     images: [
       {
@@ -54,9 +57,10 @@ export const MileStoneThree = {
     ]
   }
 }
-export const MileStoneFour = {
+export const MilestoneFour = {
   args: {
     dir: 'progressBars',
+    title: 'Milestone Four',
     fileName: 'milestoneFour.png',
     images: [
       {
@@ -70,9 +74,10 @@ export const MileStoneFour = {
     ]
   }
 }
-export const MileStoneFive = {
+export const MilestoneFive = {
   args: {
     dir: 'progressBars',
+    title: 'Milestone Five',
     fileName: 'milestoneFive.png',
     images: [
       {
