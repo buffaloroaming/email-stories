@@ -1,6 +1,10 @@
 <template>
   <div class="hero-component">
     <img :src="getImageURL(fileName, dir)" alt="" class="full-width-image" />
+    <div>
+      <h3>Title</h3>
+      <p>{{ title }}</p>
+    </div>
     <div v-for="(image, index) in images" :key="index" class="image-details">
       <h3>{{ image.screen }}</h3>
       <p>{{ image.path }}</p>
@@ -15,6 +19,7 @@ function getImageURL(name, dir) {
 }
 defineProps({
   fileName: String,
+  title: String,
   dir: String,
   width: Number,
   images: []
