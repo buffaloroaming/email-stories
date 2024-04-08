@@ -1,16 +1,16 @@
-import FullWidthImage from '@/components/FullWidthImage.vue'
+import SquareImage from '@/components/SquareImage.vue'
 
 export default {
-  title: 'Components/Heros',
-  component: FullWidthImage,
+  title: 'Components/SquareImages',
+  component: SquareImage,
   tags: ['autodocs']
 }
 
-export const Welcome = {
+export const AddBill = {
   args: {
-    dir: 'heros',
-    title: 'Welcome',
-    fileName: 'welcome.png',
+    dir: 'square',
+    title: 'Add Bill',
+    fileName: ['addBill.png'],
     images: [
       {
         screen: 'Desktop',
@@ -23,11 +23,11 @@ export const Welcome = {
     ]
   }
 }
-export const WelcomeCommunity = {
+export const Avocados = {
   args: {
-    dir: 'heros',
-    title: 'Welcome Community',
-    fileName: 'welcomeCommunity.png',
+    dir: 'square',
+    title: 'Avocados',
+    fileName: ['avocados.png'],
     images: [
       {
         screen: 'Desktop',
@@ -40,11 +40,11 @@ export const WelcomeCommunity = {
     ]
   }
 }
-export const ActivateCard = {
+export const AvoidPainfulFees = {
   args: {
-    dir: 'heros',
-    title: 'Activate Card',
-    fileName: 'activateCard.png',
+    dir: 'square',
+    title: 'Avoid Painful Fees',
+    fileName: ['avoidPainfulFees.png'],
     images: [
       {
         screen: 'Desktop',
@@ -57,11 +57,11 @@ export const ActivateCard = {
     ]
   }
 }
-export const ActivateCardTwo = {
+export const DecideSave = {
   args: {
-    dir: 'heros',
-    title: 'Activate Card 2',
-    fileName: 'activateCard2.png',
+    dir: 'square',
+    title: 'Decide Save',
+    fileName: ['decideSave.png'],
     images: [
       {
         screen: 'Desktop',
@@ -74,11 +74,11 @@ export const ActivateCardTwo = {
     ]
   }
 }
-export const Agenda = {
+export const DigitSecurity = {
   args: {
-    dir: 'heros',
-    fileName: 'agenda.png',
-    title: 'Agenda',
+    dir: 'square',
+    title: 'Digit Security',
+    fileName: ['digitSecurity.png'],
     images: [
       {
         screen: 'Desktop',
@@ -91,11 +91,11 @@ export const Agenda = {
     ]
   }
 }
-export const CardMail = {
+export const EraseDebt = {
   args: {
-    dir: 'heros',
-    title: 'Card Mail',
-    fileName: 'cardMail.png',
+    dir: 'square',
+    title: 'Erase Debt',
+    fileName: ['eraseDebt.png'],
     images: [
       {
         screen: 'Desktop',
@@ -108,11 +108,11 @@ export const CardMail = {
     ]
   }
 }
-export const CardMailPurple = {
+export const EraseDebtBlue = {
   args: {
-    dir: 'heros',
-    title: 'Card Mail Purple',
-    fileName: 'cardMailPurple.png',
+    dir: 'square',
+    title: 'Erase Debt Blue',
+    fileName: ['eraseDebtBlue.png'],
     images: [
       {
         screen: 'Desktop',
@@ -125,11 +125,11 @@ export const CardMailPurple = {
     ]
   }
 }
-export const CardReceived = {
+export const EverythingYouNeedPhone = {
   args: {
-    dir: 'heros',
-    title: 'Card Received',
-    fileName: 'cardReceived.png',
+    dir: 'square',
+    title: 'Everything You Need Phone',
+    fileName: ['everythingYouNeed_phone.png'],
     images: [
       {
         screen: 'Desktop',

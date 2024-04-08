@@ -1,16 +1,16 @@
-import FullWidthImage from '@/components/FullWidthImage.vue'
+import SquareImage from '@/components/SquareImage.vue'
 
 export default {
-  title: 'Components/Heros',
-  component: FullWidthImage,
+  title: 'Components/Icons',
+  component: SquareImage,
   tags: ['autodocs']
 }
 
-export const Welcome = {
+export const IconOne = {
   args: {
-    dir: 'heros',
-    title: 'Welcome',
-    fileName: 'welcome.png',
+    dir: 'icons',
+    title: 'One',
+    fileName: ['icon-one-light.png', 'icon-one-dark.png'],
     images: [
       {
         screen: 'Desktop',
@@ -23,11 +23,12 @@ export const Welcome = {
     ]
   }
 }
-export const WelcomeCommunity = {
+
+export const IconTwo = {
   args: {
-    dir: 'heros',
-    title: 'Welcome Community',
-    fileName: 'welcomeCommunity.png',
+    dir: 'icons',
+    title: 'Two',
+    fileName: ['icon-two-light.png', 'icon-two-dark.png'],
     images: [
       {
         screen: 'Desktop',
@@ -40,11 +41,12 @@ export const WelcomeCommunity = {
     ]
   }
 }
-export const ActivateCard = {
+
+export const IconThree = {
   args: {
-    dir: 'heros',
-    title: 'Activate Card',
-    fileName: 'activateCard.png',
+    dir: 'icons',
+    title: 'Three',
+    fileName: ['icon-three-light.png', 'icon-three-dark.png'],
     images: [
       {
         screen: 'Desktop',
@@ -57,11 +59,12 @@ export const ActivateCard = {
     ]
   }
 }
-export const ActivateCardTwo = {
+
+export const IconFour = {
   args: {
-    dir: 'heros',
-    title: 'Activate Card 2',
-    fileName: 'activateCard2.png',
+    dir: 'icons',
+    title: 'Four',
+    fileName: ['icon-four-light.png', 'icon-four-dark.png'],
     images: [
       {
         screen: 'Desktop',
@@ -74,11 +77,12 @@ export const ActivateCardTwo = {
     ]
   }
 }
-export const Agenda = {
+
+export const IconFive = {
   args: {
-    dir: 'heros',
-    fileName: 'agenda.png',
-    title: 'Agenda',
+    dir: 'icons',
+    title: 'Five',
+    fileName: ['icon-five-light.png', 'icon-five-dark.png'],
     images: [
       {
         screen: 'Desktop',
@@ -91,45 +95,11 @@ export const Agenda = {
     ]
   }
 }
-export const CardMail = {
+export const TurnOnNotifications = {
   args: {
-    dir: 'heros',
-    title: 'Card Mail',
-    fileName: 'cardMail.png',
-    images: [
-      {
-        screen: 'Desktop',
-        path: 'https://res.cloudinary.com/oportun/image/upload/v1675199017/email/illustrations/desktop/email_welcomeText.png'
-      },
-      {
-        screen: 'Mobile',
-        path: 'https://res.cloudinary.com/oportun/image/upload/v1675198769/email/illustrations/mobile/email_welcomeText_mobile.png'
-      }
-    ]
-  }
-}
-export const CardMailPurple = {
-  args: {
-    dir: 'heros',
-    title: 'Card Mail Purple',
-    fileName: 'cardMailPurple.png',
-    images: [
-      {
-        screen: 'Desktop',
-        path: 'https://res.cloudinary.com/oportun/image/upload/v1675199017/email/illustrations/desktop/email_welcomeText.png'
-      },
-      {
-        screen: 'Mobile',
-        path: 'https://res.cloudinary.com/oportun/image/upload/v1675198769/email/illustrations/mobile/email_welcomeText_mobile.png'
-      }
-    ]
-  }
-}
-export const CardReceived = {
-  args: {
-    dir: 'heros',
-    title: 'Card Received',
-    fileName: 'cardReceived.png',
+    dir: 'icons',
+    title: 'Turn On Notifications',
+    fileName: ['icon-bell-light.png', 'icon-bell-dark.png'],
     images: [
       {
         screen: 'Desktop',

@@ -1,0 +1,10 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.dashed-border {
+  border: 2px dashed rgba(151, 71, 255, 0.5);
+}
+.padding-30 {
+  padding: 30px;
+}
