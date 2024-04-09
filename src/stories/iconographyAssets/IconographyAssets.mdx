@@ -1,0 +1,70 @@
+import { Meta, Unstyled, Story } from '@storybook/blocks'
+import './IconographyAssets.css'
+import * as IconographyStories from './IconographyAssets.stories'
+
+<Meta of={IconographyStories} />
+
+<Unstyled>
+  <h1>iconography</h1>
+  <section>
+    <h2>Socials</h2>
+    <div class="flex-row margin-bottom-4">
+      <Story of={IconographyStories.Telephone} />
+      <Story of={IconographyStories.HelloEmail} />
+      <Story of={IconographyStories.Youtube} />
+      <Story of={IconographyStories.Facebook} />
+      <Story of={IconographyStories.Twitter} />
+      <Story of={IconographyStories.LinkedInIcons} />
+      <Story of={IconographyStories.Instagram} />
+      <Story of={IconographyStories.HolaEmail} />
+    </div>
+    <h2>Apps</h2>
+    <div class="flex-row margin-bottom-4">
+      <Story of={IconographyStories.GooglePlay} />
+      <Story of={IconographyStories.AppStore} />
+      <div>
+        <div class="center">
+          <p>Available on</p>
+        </div>
+        <div class="flex-row available-on-icons">
+          <Story of={IconographyStories.AvailableOnApple} />
+          <Story of={IconographyStories.AvailableOnGoogle} />
+        </div>
+      </div>
+      <div class="remove-child-outline flex-row">
+        <Story of={IconographyStories.LogoIcon} />
+        <Story of={IconographyStories.QRCode} />
+      </div>
+    </div>
+    <h2>Vector / SVG</h2>
+    <div class="margin-bottom-4 flex-row remove-child-outline">
+      <Story of={IconographyStories.CircleIconOne} />
+      <Story of={IconographyStories.CircleIconTwo} />
+      <Story of={IconographyStories.CircleIconThree} />
+      <Story of={IconographyStories.CircleIconFour} />
+      <Story of={IconographyStories.CreditCard} />
+      <Story of={IconographyStories.Wallet} />
+      <Story of={IconographyStories.Help} />
+      <Story of={IconographyStories.CreditCardOutlined} />
+      <Story of={IconographyStories.PiggyBank} />
+      <Story of={IconographyStories.GreenArrow} />
+    </div>
+    <div class="margin-bottom-4 dark-icon-container remove-child-margin flex-row remove-child-outline">
+      <Story of={IconographyStories.CircleIconOneWhite} />
+      <Story of={IconographyStories.CircleIconTwoWhite} />
+      <Story of={IconographyStories.CircleIconThreeWhite} />
+      <Story of={IconographyStories.CircleIconFourWhite} />
+      <Story of={IconographyStories.CreditCardWhite} />
+      <Story of={IconographyStories.WalletWhite} />
+      <Story of={IconographyStories.HelpWhite} />
+      <Story of={IconographyStories.CreditCardOutlinedWhite} />
+      <Story of={IconographyStories.PiggyBankWhite} />
+    </div>
+    <div class="flex-row remove-child-outline margin-bottom-4">
+      <Story of={IconographyStories.ForALimitedTime} />
+      <Story of={IconographyStories.LimitedTimeOffer} />
+      <Story of={IconographyStories.OferTaDeTiempoLimitado} />
+    </div>
+  </section>
+</Unstyled>
+./IconographyAssets.stories
