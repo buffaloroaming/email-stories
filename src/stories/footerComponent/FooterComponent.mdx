@@ -1,0 +1,29 @@
+import { Canvas, Meta, Unstyled, Story } from '@storybook/blocks'
+
+import * as FooterStories from './FooterComponent.stories'
+
+import { FooterEnglishCode } from './FooterEnglishCode.js'
+import { FooterSpanishCode } from './FooterSpanishCode.js'
+import { gitHubAction } from '../actions/actions.js'
+
+import '@/assets/styles/main.css'
+
+<Meta of={FooterStories} />
+
+<Unstyled>
+  <h1>footers</h1>
+  <section>
+    <h2>English</h2>
+    <Canvas
+      of={FooterStories.English}
+      additionalActions={[gitHubAction]}
+      source={{ code: FooterEnglishCode }}
+    />
+    <h2>Spanish</h2>
+    <Canvas
+      of={FooterStories.Spanish}
+      additionalActions={[gitHubAction]}
+      source={{ code: FooterSpanishCode }}
+    />
+  </section>
+</Unstyled>
