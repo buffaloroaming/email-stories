@@ -1,7 +1,7 @@
 import HeaderComponent from '@/components/HeaderComponent.vue'
 
 export default {
-  title: 'Components/Headers',
+  title: 'Modules/Headers',
   component: HeaderComponent
   // tags: ['autodocs']
 }
