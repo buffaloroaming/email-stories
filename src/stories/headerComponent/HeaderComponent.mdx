@@ -1,0 +1,26 @@
+import { Canvas, Meta, Unstyled, Story } from '@storybook/blocks'
+import '@/assets/styles/main.css'
+import * as HeaderStories from './HeaderComponent.stories'
+import { HeaderLogInCode } from './HeaderLogInCode.js'
+import { HeaderNoLogInCode } from './HeaderNoLogInCode.js'
+import { gitHubAction } from '../actions/actions.js'
+
+<Meta of={HeaderStories} />
+
+<Unstyled>
+  <h1>headers</h1>
+  <section>
+    <h2>Log In</h2>
+    <Canvas
+      of={HeaderStories.LogIn}
+      additionalActions={[gitHubAction]}
+      source={{ code: HeaderLogInCode }}
+    />
+    <h2>No Log In</h2>
+    <Canvas
+      of={HeaderStories.NoLogIn}
+      additionalActions={[gitHubAction]}
+      source={{ code: HeaderNoLogInCode }}
+    />
+  </section>
+</Unstyled>

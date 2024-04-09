@@ -1,0 +1,334 @@
+:root {
+  color-scheme: light dark;
+  supported-color-schemes: light dark;
+}
+table {
+  border-collapse: collapse;
+  padding: 0;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+table td {
+  padding: 0;
+}
+img,
+a img {
+  border: 0;
+  height: auto;
+  outline: none;
+  text-decoration: none;
+}
+body {
+  height: 100% !important;
+  margin: 0 auto !important;
+  padding: 0;
+  width: 100% !important;
+}
+a {
+  text-decoration: underline;
+}
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+p,
+a,
+h1,
+h2,
+h3,
+h4 {
+  font-feature-settings: 'salt' on;
+}
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: 'TT Commons', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #000001;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'TT Commons', sans-serif;
+  font-size: 45px;
+  line-height: 48px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'TT Commons', Arial, sans-serif;
+  font-size: 27px;
+  line-height: 31px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: 'TT Commons', Arial, sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+}
+h4 {
+  margin: 0;
+  padding: 0;
+  font-family: 'TT Commons', Arial, sans-serif;
+  font-size: 27px;
+  line-height: 31px;
+  font-weight: 500;
+}
+strong {
+  font-weight: 600;
+}
+.btnBlk {
+  font-family: 'TT Commons', Arial, sans-serif;
+}
+.btnBlk:hover {
+  background: #595959 !important;
+  transition: all 200ms;
+}
+a.btnBlk:visited,
+a.btnBlk:active {
+  color: #fdfeff;
+}
+.btnWht {
+  font-family: 'TT Commons', Arial, sans-serif;
+}
+.btnWht:hover {
+  background: #e8e8e8 !important;
+  transition: all 200ms;
+}
+a.btnWht:visited,
+a.btnWht:active {
+  color: #000001;
+}
+.btnLogin {
+  font-family: 'TT Commons Classic', Arial, sans-serif;
+}
+.btnLogin:hover {
+  border: 1px solid #bfbfbf !important;
+  color: #808080 !important;
+  transition: all 200ms;
+}
+a.btnLogin:visited,
+a.btnLogin:active {
+  color: #000001;
+}
+.txtLink {
+  font-family: 'TT Commons', Arial, sans-serif;
+  font-weight: 500;
+}
+.txtLink:hover {
+  color: #40d271 !important;
+  transition: all 200ms;
+}
+a.txtLink:visited,
+a.txtLink:active {
+  color: inherit !important;
+}
+sup {
+  line-height: 0;
+  font-size: 60%;
+  mso-text-raise: 45%;
+}
+.green {
+  color: #6cdb8b;
+}
+
+@media screen and (max-width: 799px) {
+  .mw100 {
+    max-width: 100% !important;
+  }
+  .w100 {
+    width: 100% !important;
+    margin: 0 auto !important;
+    float: none !important;
+  }
+  .w93 {
+    width: 93% !important;
+  }
+  .w85 {
+    width: 85% !important;
+  }
+  .w300 {
+    width: 300px !important;
+  }
+  h1 {
+    font-size: 35px !important;
+    line-height: 39px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+    line-height: 34px !important;
+  }
+  h3,
+  h4 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+  .txt14 {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+  .txtctr {
+    margin: 0 auto !important;
+    float: none !important;
+    text-align: center;
+  }
+  .noborder {
+    border: 0 !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .social {
+    width: 30px !important;
+    height: auto;
+  }
+  .mblIcons {
+    width: 50px !important;
+    height: auto;
+  }
+  .mblPad {
+    padding: 12px 0px !important;
+  }
+  .clrLR {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .mblBtn {
+    width: 100% !important;
+    padding: 12px 0px !important;
+  }
+  .hide {
+    display: none !important;
+    max-height: 0px !important;
+    overflow: hidden !important;
+  }
+  .show {
+    display: block !important;
+    max-height: none !important;
+    overflow: visible !important;
+    visibility: visible !important;
+  }
+  u ~ div .full-wrap {
+    min-width: 100vw;
+  }
+  div > u ~ div .full-wrap {
+    min-width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg-dark {
+    background-color: #000001 !important;
+  }
+  .bg-light {
+    background-color: #fdfeff !important;
+  }
+  .bg-dark-gry {
+    background-color: #595959 !important;
+  }
+  .dmTextBlk {
+    color: #000001 !important;
+  }
+  .dmTextWht {
+    color: #fdfeff !important;
+  }
+  .txtLink {
+    color: #fdfeff !important;
+  }
+  .grnLink {
+    color: #6cdb8b !important;
+  }
+  .border {
+    border-color: #fdfeff !important;
+  }
+  .btnWht {
+    background-color: #000001 !important;
+    color: #fdfeff !important;
+  }
+  .btnBlk {
+    background-color: #fdfeff !important;
+    color: #000001 !important;
+  }
+  .btnLogin {
+    border: 1px solid #fdfeff !important;
+    color: #fdfeff !important;
+  }
+  .lightimage {
+    display: none !important;
+  }
+  .mblborderwrap {
+    border: 2px solid #000001 !important;
+  }
+  .darkimageWrapper,
+  .darkimage {
+    display: block !important;
+  }
+  .darkAppWrapper,
+  .appDarkImage {
+    display: inline-block !important;
+  }
+  [data-ogsc] .bg-dark {
+    background-color: #000001 !important;
+  }
+  [data-ogsc] .bg-light {
+    background-color: #fdfeff !important;
+  }
+  [data-ogsc] .bg-dark-gry {
+    background-color: #595959 !important;
+  }
+  [data-ogsc] .dmTextBlk {
+    color: #000001 !important;
+  }
+  [data-ogsc] .dmTextWht {
+    color: #fdfeff !important;
+  }
+  [data-ogsc] .txtLink {
+    color: #fdfeff !important;
+  }
+  [data-ogsc] .grnLink {
+    color: #6cdb8b !important;
+  }
+  [data-ogsc] .border {
+    border-color: #fdfeff !important;
+  }
+  [data-ogsc] .btnWht {
+    background-color: #000001 !important;
+    color: #fdfeff !important;
+  }
+  [data-ogsc] .btnBlk {
+    background-color: #fdfeff !important;
+    color: #000001 !important;
+  }
+  [data-ogsc] .btnLogin {
+    border: 1px solid #fdfeff !important;
+    color: #fdfeff !important;
+  }
+  [data-ogsc] .lightimage {
+    display: none !important;
+  }
+  [data-ogsc] .mblborderwrap {
+    border: 2px solid #000001 !important;
+  }
+  [data-ogsc] .darkimageWrapper,
+  .darkimage {
+    display: block !important;
+  }
+  [data-ogsc] .darkAppWrapper,
+  .appDarkImage {
+    display: inline-block !important;
+  }
+}
