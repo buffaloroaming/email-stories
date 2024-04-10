@@ -1,0 +1,34 @@
+import { Canvas, Meta, Unstyled, Story } from '@storybook/blocks'
+import * as Hero from './HeroModule.stories'
+import { HeroCTACode } from './HeroCTACode.js'
+import { HeroNoCTACode } from './HeroNoCTACode.js'
+import { gitHubAction } from '../actions/actions.js'
+import '@/assets/styles/main.css'
+
+<Meta of={Hero} />
+
+<Unstyled>
+  <section style={{ maxWidth: '640px' }}>
+    <h1>Hero Modules</h1>
+    <p>
+      An illud consul vidisse per. Enim maluisset vix id, cu molestie convenire sea. Ex viderer
+      delenit reprehendunt vix, mentitum repudiare mediocritatem mei an, ea eos doming audire
+      probatus.
+    </p>
+  </section>
+  <section class="margin-bottom_40">
+    <div class="module-container dashed-border">
+      <div class="max-width_600 background-color_gray border-radius_12 height_224"></div>
+    </div>
+  </section>
+  <section>
+    <h2>Log In</h2>
+    <Canvas of={Hero.ModuleOne} additionalActions={[gitHubAction]} source={{ code: HeroCTACode }} />
+    <h2>No Log In</h2>
+    <Canvas
+      of={Hero.ModuleTwo}
+      additionalActions={[gitHubAction]}
+      source={{ code: HeroNoCTACode }}
+    />
+  </section>
+</Unstyled>

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import './CallToAction.css'
+import '@/assets/styles/button.css'
 import { reactive, computed } from 'vue'
 
 export default {
@@ -17,6 +17,7 @@ export default {
     size: {
       type: String,
       default: 'desktop',
+
       validator: function (value) {
         return ['mobile', 'desktop'].indexOf(value) !== -1
       }
