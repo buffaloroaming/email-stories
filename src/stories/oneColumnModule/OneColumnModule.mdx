@@ -1,15 +1,15 @@
 import { Canvas, Meta, Unstyled, Story } from '@storybook/blocks'
-import * as Hero from './HeroModule.stories'
+import * as OneColumn from './OneColumnModule.stories'
 import { HeroCTACode } from './HeroCTACode.js'
 import { HeroNoCTACode } from './HeroNoCTACode.js'
 import { gitHubAction } from '../actions/actions.js'
 import '@/assets/styles/main.css'
 
-<Meta of={Hero} />
+<Meta of={OneColumn} />
 
 <Unstyled>
-  <section style={{ maxWidth: '640px' }}>
-    <h1>Hero Modules</h1>
+  <section style={{ maxWidth: '720px' }}>
+    <h1>One Column Modules</h1>
     <p>
       An illud consul vidisse per. Enim maluisset vix id, cu molestie convenire sea. Ex viderer
       delenit reprehendunt vix, mentitum repudiare mediocritatem mei an, ea eos doming audire
@@ -23,10 +23,32 @@ import '@/assets/styles/main.css'
   </section>
   <section>
     <h2>Module One</h2>
-    <Canvas of={Hero.ModuleOne} additionalActions={[gitHubAction]} source={{ code: HeroCTACode }} />
+    <Canvas
+      of={OneColumn.ModuleOne}
+      additionalActions={[gitHubAction]}
+      source={{ code: HeroCTACode }}
+    />
     <h2>Module Two</h2>
     <Canvas
-      of={Hero.ModuleTwo}
+      of={OneColumn.ModuleTwo}
+      additionalActions={[gitHubAction]}
+      source={{ code: HeroNoCTACode }}
+    />
+    <h2>Module Three</h2>
+    <Canvas
+      of={OneColumn.ModuleThree}
+      additionalActions={[gitHubAction]}
+      source={{ code: HeroNoCTACode }}
+    />
+    <h2>Module Four</h2>
+    <Canvas
+      of={OneColumn.ModuleFour}
+      additionalActions={[gitHubAction]}
+      source={{ code: HeroNoCTACode }}
+    />
+    <h2>Module Five</h2>
+    <Canvas
+      of={OneColumn.ModuleFive}
       additionalActions={[gitHubAction]}
       source={{ code: HeroNoCTACode }}
     />
