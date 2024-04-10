@@ -4,7 +4,12 @@
     <div class="content-container">
       <h1 v-if="headline.length > 0">{{ headline }}</h1>
       <template v-if="body.length > 0">
-        <p v-for="(p, index) in body" :key="index">{{ p }}</p>
+        <p v-for="(paragraph, index) in body" :key="index">{{ paragraph }}</p>
+      </template>
+      <template v-if="listItems.length > 0">
+        <ul>
+          <li v-for="(item, index) in listItems" :key="index + item">{{ item }}</li>
+        </ul>
       </template>
       <template v-if="CTALabel">
         <ButtonComponent :label="CTALabel" buttonType="primary" />
@@ -35,16 +40,19 @@ export default {
     moduleType: {
       type: String,
       validator: function (value) {
-        return ['hero', 'columnOne', 'columnTwo'].indexOf(value) !== -1
+        return ['hero', 'oneColumn', 'twoColumn'].indexOf(value) !== -1
       }
+    },
+    listItems: {
+      type: []
     }
   },
   setup(props) {
     props = reactive(props)
     return {
       classes: computed(() => ({
-        'content-container': true,
-        [`container--${props.moduleType || 'columnOne'}`]: true
+        container: true,
+        [`container--${props.moduleType || 'oneColumn'}`]: true
       }))
     }
   }
@@ -56,17 +64,22 @@ export default {
 .container--ColumnOne {
   border: 10px solid pink;
 }
+.container {
+  max-width: 800px;
+  padding: 20px 100px;
+}
 .container--hero {
   background-color: #000001;
-  padding: 20px 100px;
-  max-width: 800px;
 }
 .content-container h1 {
   text-transform: none;
 }
 .container--hero h1,
-.content-container p {
+.container--hero p {
   color: #fdfeff;
+}
+.content-container h1,
+.content-container p {
   margin-bottom: 20px;
 }
 .container--hero p {
@@ -74,8 +87,26 @@ export default {
   font-weight: 600;
   line-height: 32px;
 }
+.container--oneColumn h1 {
+  margin-bottom: 40px;
+}
+.container--oneColumn p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.container--oneColumn p:nth-last-child() {
+  margin-bottom: 40px;
+}
 .container--hero button {
   background-color: #fdfeff;
   color: #000001;
+}
+ul {
+  margin-left: 1em;
+  margin-bottom: 40px;
+}
+li {
+  padding: 0;
 }
 </style>
