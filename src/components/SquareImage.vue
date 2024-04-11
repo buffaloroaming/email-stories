@@ -12,7 +12,7 @@
         :class="dir === 'square' ? 'square-image' : 'icon-image'"
       />
     </div>
-    <div v-else>
+    <div v-else class="single-image-container">
       <img
         v-for="path in fileName"
         :key="path"
@@ -49,10 +49,12 @@ defineProps({
 </script>
 
 <style scoped>
+.single-image-container {
+  margin-right: 20px;
+}
 .square-image {
   width: 100%;
   max-width: 442px;
-  margin-right: 20px;
 }
 .icon-image {
   width: 100%;
