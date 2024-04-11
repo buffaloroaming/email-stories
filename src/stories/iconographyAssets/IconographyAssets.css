@@ -16,7 +16,6 @@ figure:last-child {
 }
 .flex-row {
   display: flex;
-  flexwrap: wrap;
   gap: 10px;
 }
 img {

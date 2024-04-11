@@ -1,6 +1,5 @@
 <template>
   <div :class="classes">
-    {{ console.log('classes', classes) }}
     <div class="content-container">
       <h1 v-if="headline.length > 0">{{ headline }}</h1>
       <template v-if="body.length > 0">
@@ -75,14 +74,19 @@ export default {
   text-transform: none;
 }
 .container--hero h1,
-.container--hero p {
+.container--hero p,
+.container--hero li {
   color: #fdfeff;
 }
 .content-container h1,
 .content-container p {
   margin-bottom: 20px;
 }
-.container--hero p {
+.container--hero ul {
+  margin-left: 27px;
+}
+.container--hero p,
+.container--hero li {
   font-size: 27px;
   font-weight: 600;
   line-height: 32px;

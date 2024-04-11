@@ -1,7 +1,7 @@
 import Hero from '@/components/HeroModule.vue'
 
 export default {
-  title: 'Modules/Hero',
+  title: 'Modules/Heros',
   component: Hero
 }
 
@@ -10,6 +10,7 @@ export const ModuleOne = {
     moduleType: 'hero',
     headline: 'This is a headline and it is so freaking amazing, so we used it in this template',
     body: ['Current balance: {{numberFormat cardCurrentBalance "currency" "en_US"}}'],
+    listItems: [],
     CTALabel: 'Call to Action'
   }
 }
@@ -19,6 +20,7 @@ export const ModuleTwo = {
     moduleType: 'hero',
     headline: 'This is a headline and it is so freaking amazing, so we used it in this template',
     body: ['Current balance: {{numberFormat cardCurrentBalance "currency" "en_US"}}'],
+    listItems: [],
     CTALabel: ''
   }
 }

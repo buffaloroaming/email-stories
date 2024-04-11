@@ -2,8 +2,7 @@ import ProgressBar from '@/components/FullWidthImage.vue'
 
 export default {
   title: 'Assets/ProgressBar',
-  component: ProgressBar,
-  tags: ['autodocs']
+  component: ProgressBar
 }
 
 export const MilestoneOne = {

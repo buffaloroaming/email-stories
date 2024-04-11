@@ -2,8 +2,7 @@ import FullWidthImage from '@/components/FullWidthImage.vue'
 
 export default {
   title: 'Assets/Heros',
-  component: FullWidthImage,
-  tags: ['autodocs']
+  component: FullWidthImage
 }
 
 export const Welcome = {
