@@ -79,6 +79,7 @@ export default {
   color: #fdfeff;
 }
 .content-container h1,
+.content-container h2,
 .content-container p {
   margin-bottom: 20px;
 }

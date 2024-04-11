@@ -14,10 +14,7 @@ figure:last-child {
 .dark-icon-container {
   background-color: var(--primary-black);
 }
-.flex-row {
-  display: flex;
-  gap: 10px;
-}
+
 img {
   display: block;
   height: auto;
