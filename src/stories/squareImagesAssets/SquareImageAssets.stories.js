@@ -2,8 +2,7 @@ import SquareImage from '@/components/SquareImage.vue'
 
 export default {
   title: 'Assets/SquareImages',
-  component: SquareImage,
-  tags: ['autodocs']
+  component: SquareImage
 }
 
 export const AddBill = {

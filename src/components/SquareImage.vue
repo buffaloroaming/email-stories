@@ -1,6 +1,9 @@
 <template>
   <div class="square-image-component flex-row">
-    <div v-if="fileName.length > 1" class="flex-row dashed-border padding-30">
+    <div
+      v-if="fileName.length > 1"
+      class="flex-row dashed-border padding-30 align-items_flex-start"
+    >
       <img
         v-for="path in fileName"
         :key="path"
@@ -54,7 +57,7 @@ defineProps({
 .icon-image {
   width: 100%;
   max-width: 236px;
-  margin-right: 20px;
+  height: auto;
 }
 .square-image-component p {
   margin-bottom: 20px;

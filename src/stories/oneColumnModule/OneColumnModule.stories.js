@@ -1,7 +1,7 @@
 import OneColumn from '@/components/HeroModule.vue'
 
 export default {
-  title: 'Modules/OneColumn',
+  title: 'Modules/OneColumns',
   component: OneColumn
 }
 
