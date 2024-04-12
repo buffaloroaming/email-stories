@@ -1,0 +1,50 @@
+import { Canvas, Meta, Unstyled } from '@storybook/blocks'
+import * as TwoColumn from './TwoColumnModule.stories'
+import { TwoColumnModuleCode } from './TwoColumnModuleCode.js'
+import { gitHubAction } from '../actions/actions.js'
+import '@/assets/styles/main.css'
+
+<Meta of={TwoColumn} />
+
+<Unstyled>
+  <section style={{ maxWidth: '640px' }}>
+    <h1>Two Column Modules</h1>
+    <p>
+      An illud consul vidisse per. Enim maluisset vix id, cu molestie convenire sea. Ex viderer
+      delenit reprehendunt vix, mentitum repudiare mediocritatem mei an, ea eos doming audire
+      probatus.
+    </p>
+  </section>
+  <section>
+    <h2>Module One</h2>
+    <Canvas
+      of={TwoColumn.ModuleOne}
+      additionalActions={[gitHubAction]}
+      source={{ code: TwoColumnModuleCode }}
+    />
+    <h2>Module Two</h2>
+    <Canvas
+      of={TwoColumn.ModuleTwo}
+      additionalActions={[gitHubAction]}
+      source={{ code: TwoColumnModuleCode }}
+    />
+    <h2>Module Three</h2>
+    <Canvas
+      of={TwoColumn.ModuleThree}
+      additionalActions={[gitHubAction]}
+      source={{ code: TwoColumnModuleCode }}
+    />
+    <h2>Module Four</h2>
+    <Canvas
+      of={TwoColumn.ModuleFour}
+      additionalActions={[gitHubAction]}
+      source={{ code: TwoColumnModuleCode }}
+    />
+    <h2>Module Five</h2>
+    <Canvas
+      of={TwoColumn.ModuleFive}
+      additionalActions={[gitHubAction]}
+      source={{ code: TwoColumnModuleCode }}
+    />
+  </section>
+</Unstyled>

@@ -24,3 +24,8 @@ p {
   margin: 0;
   margin-bottom: var(--spacing-unit-x2);
 }
+ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 1em;
+}

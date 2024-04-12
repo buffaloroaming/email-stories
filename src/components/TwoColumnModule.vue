@@ -1,8 +1,16 @@
 <template>
   <div class="module-container">
-    <div class="flex-row gap_20" :class="{ 'flex-reverse': reverse }">
+    <div
+      class="flex-row gap_20"
+      :class="{
+        flexReverse: styles.reverse,
+        border: styles.border,
+        interiorPadding: styles.border,
+        alignItemsCenter: styles.imgAlignCenter
+      }"
+    >
       <div class="image-container">
-        <img :src="getImageURL(image)" alt="" />
+        <img :src="getImageURL(image)" :style="{ width: styles.imgWidth }" alt="" />
       </div>
       <div>
         <h2 v-if="headline.length > 0">{{ headline }}</h2>
@@ -35,7 +43,7 @@ defineProps({
   listItems: Array,
   image: String,
   CTALabel: String,
-  reverse: Boolean
+  styles: Object
 })
 </script>
 
@@ -50,7 +58,21 @@ img {
   width: 220px;
   height: auto;
 }
-.flex-reverse {
+.flexReverse {
   flex-direction: row-reverse;
+}
+.border {
+  border: 1px solid;
+  border-color: var(--color-primary);
+  border-radius: 16px;
+}
+.interiorPadding {
+  padding: var(--spacing-unit-x2);
+}
+.alignItemsCenter {
+  align-items: center;
+}
+p {
+  margin-bottom: 20px;
 }
 </style>
