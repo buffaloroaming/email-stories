@@ -1,0 +1,43 @@
+import { Canvas, Meta, Unstyled } from '@storybook/blocks'
+import * as TemplateShell from './TemplateShell.stories'
+import { gitHubAction } from '../actions/actions'
+import { TemplateShellCode } from './TemplateShellCode'
+import '@/assets/styles/main.css'
+
+<Meta of={TemplateShell} />
+
+<Unstyled>
+  <section style={{ maxWidth: '860px' }}>
+    <h1>Template Shells</h1>
+    <p>
+      An illud consul vidisse per. Enim maluisset vix id, cu molestie convenire sea. Ex viderer
+      delenit reprehendunt vix, mentitum repudiare mediocritatem mei an, ea eos doming audire
+      probatus.
+    </p>
+    <h2>English Login</h2>
+    <Canvas
+      of={TemplateShell.EnglishLogIn}
+      additionalActions={[gitHubAction]}
+      source={{ code: TemplateShellCode }}
+    />
+    <h2>English No Login</h2>
+    <Canvas
+        of={TemplateShell.EnglishNoLogIn}
+      additionalActions={[gitHubAction]}
+      source={{ code: TemplateShellCode }}
+    />
+    <h2>Spanish Login</h2>
+    <Canvas
+      of={TemplateShell.SpanishLogIn}
+      additionalActions={[gitHubAction]}
+      source={{ code: TemplateShellCode }}
+    />
+    <h2>Spanish No Login</h2>
+    <Canvas
+      of={TemplateShell.SpanishNoLogIn}
+      additionalActions={[gitHubAction]}
+      source={{ code: TemplateShellCode }}
+    />
+
+  </section>
+</Unstyled>
