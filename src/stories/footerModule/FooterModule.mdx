@@ -1,4 +1,4 @@
-import { Canvas, Meta, Unstyled, Story } from '@storybook/blocks'
+import { Canvas, Meta, Unstyled, Story, Primary, Controls } from '@storybook/blocks'
 
 import * as FooterStories from './FooterModule.stories'
 
@@ -16,6 +16,8 @@ import '@/assets/styles/main.css'
     <p>
       The Footer is built with variants including language (English and Spanish) and legal copy.
     </p>
+    <Primary of={FooterStories} />
+    <Controls />
     <h2>English</h2>
     <Canvas
       of={FooterStories.English}

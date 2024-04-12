@@ -3,7 +3,6 @@ import Spacing from './SpacingFormat.vue'
 export default {
   title: 'Format/Spacing',
   component: Spacing,
-  // tags: ['autodocs'],
   argTypes: {
     spacing: {
       control: {

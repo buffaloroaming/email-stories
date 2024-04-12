@@ -2,7 +2,14 @@ import Hero from '@/components/HeroModule.vue'
 
 export default {
   title: 'Modules/Heros',
-  component: Hero
+  component: Hero,
+  argTypes: {
+    moduleType: {
+      table: {
+        disable: true
+      }
+    }
+  }
 }
 
 export const ModuleOne = {

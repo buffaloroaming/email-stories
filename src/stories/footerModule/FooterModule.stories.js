@@ -2,8 +2,16 @@ import Footer from '@/components/FooterModule.vue'
 
 export default {
   title: 'Modules/Footers',
-  component: Footer
-  // tags: ['autodocs']
+  component: Footer,
+  argTypes: {
+    language: {
+      control: {
+        type: 'select',
+        required: true
+      },
+      options: ['english', 'spanish']
+    }
+  }
 }
 
 export const English = {

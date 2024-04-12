@@ -1,4 +1,4 @@
-import { Canvas, Meta, Unstyled } from '@storybook/blocks'
+import { Canvas, Meta, Unstyled, Primary, Controls } from '@storybook/blocks'
 import * as TemplateShell from './TemplateShell.stories'
 import { gitHubAction } from '../actions/actions'
 import { TemplateShellCode } from './TemplateShellCode'
@@ -14,6 +14,8 @@ import '@/assets/styles/main.css'
       delenit reprehendunt vix, mentitum repudiare mediocritatem mei an, ea eos doming audire
       probatus.
     </p>
+    <Primary of={TemplateShell}/>
+    <Controls />
     <h2>English Login</h2>
     <Canvas
       of={TemplateShell.EnglishLogIn}

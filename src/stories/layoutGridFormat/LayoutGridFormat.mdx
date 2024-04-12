@@ -1,0 +1,32 @@
+import { Canvas, Meta, Unstyled, Controls, Primary } from '@storybook/blocks'
+import { gitHubAction } from '../actions/actions'
+import * as LayoutGridFormat from './LayoutGridFormat.stories'
+
+<Meta of={LayoutGridFormat} />
+
+<Unstyled>
+  <section style={{ maxWidth: '640px' }}>
+    <h1>Layout Grid Format</h1>
+
+      An illud consul vidisse per. Enim maluisset vix id, cu molestie convenire sea. Ex viderer
+      delenit reprehendunt vix, mentitum repudiare mediocritatem mei an, ea eos doming audire
+      probatus.
+
+  <div style={{ height: '20px' }}></div>
+  </section>
+</Unstyled>
+<section style={{ maxWidth: '1280px' }}>
+  <Primary of={LayoutGridFormat} additionalActions={[gitHubAction]} />
+  <Controls />
+
+  <div style={{ height: '10px' }}></div>
+  <Canvas of={LayoutGridFormat.FullWidth} additionalActions={[gitHubAction]} />
+  <div style={{ height: '10px' }}></div>
+  <Canvas of={LayoutGridFormat.ColumnOf1} additionalActions={[gitHubAction]} />
+  <div style={{ height: '10px' }}></div>
+  <Canvas of={LayoutGridFormat.ColumnOf2} additionalActions={[gitHubAction]} />
+  <div style={{ height: '10px' }}></div>
+  <Canvas of={LayoutGridFormat.ColumnOf3} additionalActions={[gitHubAction]} />
+	<div style={{ height: '10px' }}></div>
+  <Canvas of={LayoutGridFormat.ColumnOf4} additionalActions={[gitHubAction]} />
+</section>

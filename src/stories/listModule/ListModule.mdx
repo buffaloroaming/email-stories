@@ -1,4 +1,4 @@
-import { Canvas, Meta, Unstyled, Story } from '@storybook/blocks'
+import { Canvas, Meta, Unstyled, Story, Primary, Controls } from '@storybook/blocks'
 import * as List from './ListModule.stories'
 import { multipleItemsCode } from './multipleItemsCode.js'
 import { singleItemCode } from './singleItemCode.js'
@@ -16,6 +16,8 @@ import '@/assets/styles/main.css'
       probatus.
     </p>
   </section>
+  <Primary of={List} />
+  <Controls />
   <section class="margin-bottom_40">
     <div class="module-container dashed-border">
       <div class="max-width_600 background-color_gray border-radius_12 height_224"></div>

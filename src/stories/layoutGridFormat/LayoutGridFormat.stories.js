@@ -3,7 +3,6 @@ import LayoutGrid from './LayoutGridFormat.vue'
 export default {
   title: 'Format/LayoutGrid',
   component: LayoutGrid,
-  tags: ['autodocs'],
   argTypes: {
     numOfColumns: {
       control: {
@@ -11,6 +10,16 @@ export default {
         required: true
       },
       options: [0, 1, 2, 3, 4]
+    },
+    contentWidth: {
+      table: {
+        disable: true
+      }
+    },
+    columnLayout: {
+      table: {
+        disable: true
+      }
     }
   }
 }

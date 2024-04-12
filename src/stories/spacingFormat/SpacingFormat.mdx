@@ -1,5 +1,6 @@
-import { Canvas, Meta, Unstyled, Story } from '@storybook/blocks'
-
+import { Canvas, Meta, Unstyled, Controls, Primary } from '@storybook/blocks'
+import { spacingFormatCode } from './spacingFormatCode'
+import { gitHubAction } from '../actions/actions'
 import * as Spacing from './SpacingFormat.stories'
 
 <Meta of={Spacing} />
@@ -20,11 +21,20 @@ import * as Spacing from './SpacingFormat.stories'
   </section>
 </Unstyled>
 <section style={{ maxWidth: '1280px' }}>
-  <Story of={Spacing.Spacing10} />
+  <Primary of={Spacing} additionalActions={[gitHubAction]}
+      source={{ code: spacingFormatCode }} />
+  <Controls />
+
   <div style={{ height: '10px' }}></div>
-  <Story of={Spacing.Spacing20} />
+  <Canvas of={Spacing.Spacing10} additionalActions={[gitHubAction]}
+      source={{ code: spacingFormatCode }} />
   <div style={{ height: '10px' }}></div>
-  <Story of={Spacing.Spacing30} />
+  <Canvas of={Spacing.Spacing20} additionalActions={[gitHubAction]}
+      source={{ code: spacingFormatCode }} />
   <div style={{ height: '10px' }}></div>
-  <Story of={Spacing.Spacing40} />
+  <Canvas of={Spacing.Spacing30} additionalActions={[gitHubAction]}
+      source={{ code: spacingFormatCode }} />
+  <div style={{ height: '10px' }}></div>
+  <Canvas of={Spacing.Spacing40} additionalActions={[gitHubAction]}
+      source={{ code: spacingFormatCode }} />
 </section>

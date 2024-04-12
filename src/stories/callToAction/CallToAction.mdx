@@ -1,4 +1,4 @@
-import { Canvas, Meta, Unstyled, Story } from '@storybook/blocks'
+import { Canvas, Meta, Unstyled, Primary, Controls } from '@storybook/blocks'
 import '@/assets/styles/main.css'
 
 import * as CallToActionStories from './CallToAction.stories'
@@ -6,25 +6,32 @@ import * as CallToActionStories from './CallToAction.stories'
 <Meta of={CallToActionStories} />
 
 <Unstyled>
-    <h1>Call to Actions</h1>
+<section style={{ maxWidth: '850px' }}>
+  <h1>Call to Actions</h1>
+  <p>
+    An illud consul vidisse per. Enim maluisset vix id, cu molestie convenire sea. Ex viderer
+    delenit reprehendunt vix, mentitum repudiare mediocritatem mei an, ea eos doming audire
+    probatus.
+  </p>
+	<Primary of={CallToActionStories} />
+	<Controls />
+    <h2>Buttons</h2>
+    <div class="margin-bottom-4">
+      <h3>Primary</h3>
+      <Canvas of={CallToActionStories.Primary} />
+    </div>
+    <div class="margin-bottom-4">
+      <h3>Secondary</h3>
+      <Canvas of={CallToActionStories.Secondary} />
+    </div>
+    <div class="margin-bottom-4">
+      <h3>Tertiary</h3>
+      <Canvas of={CallToActionStories.Tertiary} />
+    </div>
+    <div class="margin-bottom-4">
+      <h3>Log in</h3>
+      <Canvas of={CallToActionStories.Login} />
+    </div>
 
-<section style={{ maxWidth: '1280px' }}>
-	<h2>Buttons</h2>
-	<div class="margin-bottom-4">
-	<h3>Primary</h3>
-	  <Story of={CallToActionStories.Primary} />
-	</div>
-	<div class="margin-bottom-4">
-	<h3>Secondary</h3>
-		<Story of={CallToActionStories.Secondary} />
-	</div>
-	<div class="margin-bottom-4">
-		<h3>Tertiary</h3>
-		<Story of={CallToActionStories.Tertiary} />
-	</div>
-	<div class="margin-bottom-4">
-		<h3>Log in</h3>
-		<Story of={CallToActionStories.Login} />
-	</div>
-</section>
+  </section>
 </Unstyled>

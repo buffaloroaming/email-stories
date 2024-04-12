@@ -1,4 +1,4 @@
-import { Canvas, Meta, Unstyled } from '@storybook/blocks'
+import { Canvas, Meta, Unstyled, Primary, Controls } from '@storybook/blocks'
 import * as TwoColumn from './TwoColumnModule.stories'
 import { TwoColumnModuleCode } from './TwoColumnModuleCode'
 import { gitHubAction } from '../actions/actions'
@@ -7,7 +7,7 @@ import '@/assets/styles/main.css'
 <Meta of={TwoColumn} />
 
 <Unstyled>
-  <section style={{ maxWidth: '802px' }}>
+  <section style={{ maxWidth: '850px' }}>
     <h1>Two Column Modules</h1>
     <p>
       An illud consul vidisse per. Enim maluisset vix id, cu molestie convenire sea. Ex viderer
@@ -23,6 +23,8 @@ import '@/assets/styles/main.css'
     </div>
     </div>
     </section>
+    <Primary of={TwoColumn} />
+    <Controls />
     <h2>Module One</h2>
     <Canvas
       of={TwoColumn.ModuleOne}

@@ -2,7 +2,24 @@ import TemplateShell from '@/components/TemplateShell.vue'
 
 export default {
   title: 'Modules/TemplateShell',
-  component: TemplateShell
+  component: TemplateShell,
+  argTypes: {
+    language: {
+      control: {
+        type: 'select',
+        required: true
+      },
+      description: 'Overwritten description',
+      options: ['english', 'spanish']
+    },
+    cta: {
+      control: {
+        type: 'boolean'
+      },
+      description: 'Overwritten description',
+      options: ['english', 'spanish']
+    }
+  }
 }
 
 export const EnglishLogIn = {
